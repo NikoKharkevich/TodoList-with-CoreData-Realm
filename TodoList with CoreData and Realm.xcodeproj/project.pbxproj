@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C04F4FED2788686C000BC042 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04F4FEC2788686C000BC042 /* Item.swift */; };
 		C0E1036627872CF60086E571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E1036527872CF60086E571 /* AppDelegate.swift */; };
 		C0E1036827872CF60086E571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E1036727872CF60086E571 /* SceneDelegate.swift */; };
 		C0E1036A27872CF60086E571 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E1036927872CF60086E571 /* TodoListViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C04F4FEC2788686C000BC042 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C0E1036227872CF60086E571 /* TodoList with CoreData and Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TodoList with CoreData and Realm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E1036527872CF60086E571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E1036727872CF60086E571 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C04F4FEE27886882000BC042 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0E1036B27872CF60086E571 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C04F4FEF2788689E000BC042 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C04F4FEC2788686C000BC042 /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C04F4FF0278868BA000BC042 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0E1036927872CF60086E571 /* TodoListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C04F4FF1278868DC000BC042 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				C0E1036E27872CF70086E571 /* Assets.xcassets */,
+				C0E1037027872CF70086E571 /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
 		C0E1035927872CF60086E571 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +93,10 @@
 			children = (
 				C0E1036527872CF60086E571 /* AppDelegate.swift */,
 				C0E1036727872CF60086E571 /* SceneDelegate.swift */,
-				C0E1036927872CF60086E571 /* TodoListViewController.swift */,
-				C0E1036B27872CF60086E571 /* Main.storyboard */,
-				C0E1036E27872CF70086E571 /* Assets.xcassets */,
-				C0E1037027872CF70086E571 /* LaunchScreen.storyboard */,
+				C04F4FEF2788689E000BC042 /* Model */,
+				C04F4FEE27886882000BC042 /* View */,
+				C04F4FF0278868BA000BC042 /* Controller */,
+				C04F4FF1278868DC000BC042 /* Supporting */,
 				C0E1037327872CF70086E571 /* Info.plist */,
 			);
 			path = "TodoList with CoreData and Realm";
@@ -138,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C04F4FED2788686C000BC042 /* Item.swift in Sources */,
 				C0E1036A27872CF60086E571 /* TodoListViewController.swift in Sources */,
 				C0E1036627872CF60086E571 /* AppDelegate.swift in Sources */,
 				C0E1036827872CF60086E571 /* SceneDelegate.swift in Sources */,
