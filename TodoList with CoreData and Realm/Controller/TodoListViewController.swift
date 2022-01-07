@@ -20,7 +20,7 @@ class TodoListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        loadItems()
+        loadItems()
 
     }
 
@@ -88,17 +88,15 @@ class TodoListViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
-//    func loadItems() {
-//        let decoder = PropertyListDecoder()
-//
-//        if let data = try? Data(contentsOf: dataFilePath!) {
-//            do {
-//                itemArray = try decoder.decode([Item].self, from: data)
-//            } catch {
-//                print(error)
-//            }
-//        }
-//    }
+    func loadItems() {
+        let request: NSFetchRequest<Item> = Item.fetchRequest()
+        do {
+            itemArray =  try context.fetch(request)
+        } catch {
+            print("Error fetching data from context \(error)")
+        }
+
+    }
     
 }
 
