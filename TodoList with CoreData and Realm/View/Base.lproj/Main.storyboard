@@ -100,7 +100,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="KWR-vC-yfx" kind="show" identifier="ListToItems" id="PQY-PW-KvY"/>
+                        <segue destination="KWR-vC-yfx" kind="show" identifier="goToItems" id="PQY-PW-KvY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KkS-at-jCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
